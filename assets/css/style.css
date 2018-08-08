@@ -1,0 +1,15 @@
+body {
+    width: 960px;
+    background-image: url("assets/images/topography.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+.wrapper {
+    margin: 20px;
+    align-content: center;
+    background-color: #fff;
+}
+h1 {
+    color: red;
+}
