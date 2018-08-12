@@ -2,36 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/clear.css">-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Contact</title>
 </head>
 <body>
-     <header>
-        <h1>Callie Hart</h1>
-    </header>
-    <div>
-        <ul>
-            <li><a href="index.html">About</a></li> 
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="headerWrapper">
+        <header>
+            <h1 id="titleName">Callie Hart</h1>
+    
+        <div class="menu">
+            <ul>
+                <li><a href="contact.html">| Contact</a></li>
+                <li><a href="portfolio.html">| Portfolio</a></li>
+                <li><a href="index.html">About</a></li> 
+            </ul>
+        </div>
     </div>
+    </header>
     <div class="wrapper">
-        <h1>Contact</h1>
-        <hr>
-        <form>
+        <h1 class="titleSection">Contact</h1>
+        
+        <form class="contactForm">
            Name <br>
-           <input type="text" name="ContactName"><br>
+           <input type="text" name="ContactName" placeholder="John Smith"><br>
            Email <br>
-           <input type="email" name="ContactEmail"><br>
+           <input type="email" name="ContactEmail" placeholder="example@gmail.com"><br>
            Message <br>
-           <input type="text" name="ContactMessage"><br>
-           <input type="submit" value="Submit">
+           <input id="messageBox" type="text" name="ContactMessage"><br>
+           <input id="submitBtn" type="submit" value="Submit">
 
         </form>
+    <div class="push"></div>
     </div>
-    <footer>
-        <hr>
+    
+    <footer class="footer">
         <h6>Copyright &#169</h6>
     </footer>
 </body>
