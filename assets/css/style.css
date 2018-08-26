@@ -40,6 +40,8 @@ h6 {
 .img-thumbnail {
     border: none;
     z-index: 1;
+    width: 308px;
+    
 }
 
 .jumbotron {
