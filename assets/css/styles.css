@@ -1,0 +1,411 @@
+.background-wrap {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#videoBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+a:hover { 
+    text-decoration: none;
+    
+}
+
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #666;
+}
+
+h4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 12pt;
+    color: #31A7AF;
+    text-decoration: none;
+   
+}
+
+h4:hover {
+    color: #b8a279;
+}
+
+h6 {
+    color: #f2f2f2;
+    font-size: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 5px;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    padding-top: 80px;
+
+}
+
+p {
+    color: #333;
+}
+
+.btn-dark {
+    border-radius: 0;
+    background: #b8a279;
+    border: 1px solid #b8a279;
+}
+
+.btn-dark:hover {
+    background: #666;
+    border: 1px solid #666;
+}
+
+.emailLink {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fab {
+    color: #f2f2f2;
+    z-index: 2;
+    padding: 2px; 
+}
+
+.footer {
+    height: 80px;
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pageTitle {
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 100px;
+    text-align: center;
+    color: #31A7AF; 
+}
+
+.projLinks {
+    margin: 50px 0;
+    border-bottom: 2px solid #b8a279;
+    padding-bottom: 30px;
+}
+
+.projectThumb {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+}
+
+.scrolled-nav {
+    height: 90px;
+    padding-top: 20px;
+}
+
+#signature {
+    width: 300px;
+}
+.scrolled-nav #signature {
+    width: 200px;
+}
+
+.scrolled-nav #logo {
+    width: 30px;
+}
+
+.scrolled-nav #navHamSigLog {
+    height: 30px;
+}
+
+#aboutPage {
+    background-color: #f2f2f2;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+#aboutTitle, #processTitle  {
+    border-bottom: 2px solid #b8a279;
+}
+
+#aboutText {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 20px;
+    color: #666;
+}
+
+#changingTitles {
+    color: #f2f2f2;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 50px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#contactForm {
+    margin-top: 20px;
+}
+
+#contactForm input {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px #b8a279 solid;
+    color: #666;
+}
+
+#contactForm textarea {
+    background: transparent;
+    border: 2px #b8a279 solid;
+    border-radius: 0;
+    color: #666;
+}
+
+#contactPage {
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#headShot {
+    width: 100%;
+}
+
+#homePage {
+    margin-top: 250px;
+}
+
+#homeTextCol {
+    background-color: #31A7AF;
+    margin-right: 10px;
+}
+
+#homePhotoCol {
+    border: solid 5px #b8a279;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#linkingInfo {
+    text-align: center;
+}
+
+#logo {
+    width: 50px;
+    padding-bottom: 50px;
+    display: inline;
+}
+
+#myEmail {
+    color: #f2f2f2;
+}
+
+#navLinkDiv {
+    margin-bottom: 20px;
+}
+
+#navHamSigLog {
+    height: 50px;
+}
+
+#processPage {
+    background-color: #e5e5e5;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+#portfolioPage {
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .scrolled-nav {
+        height: 65px;
+        padding-top: 0;
+    }
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .emailLink {
+        margin-bottom: 10px;
+    }
+
+    .pageTitle {
+        margin-top: 80px; 
+    }
+
+    .scrolled-nav {
+        height: 65px;
+        padding-top: 0;
+    }
+    
+    .scrolled-nav #signature {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    #aboutPage {
+        height: 100%;
+    }
+
+    #aboutText {
+        padding-bottom: 20px;
+    }
+    
+    #headShot {
+        padding: 15px;
+    }
+
+    #homeTextCol {
+        margin-right: 0px;
+    }
+    
+    #homePhotoCol {
+        border: solid 4px #b8a279;
+        padding: 20px 8px 8px 8px;
+        margin-left: 0px;
+    }
+
+    #navLinkDiv {
+        margin-bottom: 10px;
+    }
+   
+    #pageTitle {
+        margin-top: 80px;
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 575px) {
+    nav {
+        height: 65px;
+        padding-top: 0;
+    }
+
+    .scrolled-nav {
+        padding-top: 0;
+        height: 65px;
+    }
+
+    #signature {
+        width: 200px;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .scrolled-nav #signature  {
+        width: 200px;
+        padding:0;
+    }
+
+    #aboutPage {
+        margin-top: 50px;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    #changingTitles {
+        padding-top: 10px;
+        height: 100px;
+        margin-top: 50px;
+    }
+
+    #contactPage {
+        margin-top: 50px;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    #hamburger {
+        display: inline;
+        margin: 15px;
+        border: none;
+    }
+
+    #headShot {
+        height: 100%;
+    }
+
+    #homePage {
+        margin-top: 65px;
+    }
+
+    #homePhotoCol {
+        border: solid 3px #b8a279;
+        padding: 5px;
+        margin-left: 0px;
+    }
+
+    #homeTextCol {
+        margin-right: 0px;
+    }
+
+    #logo {
+        padding-bottom: 0px;
+        width: 30px;
+        margin-top: 15px;
+    }
+
+    #navLinkDiv {
+        background-color: #ccc;
+        color: #666;
+        text-align: center;
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .pageTitle {
+        margin-top: 50px; 
+    }
+
+    #portfolioPage {
+        margin-top: 50px;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    #processPage {
+        margin-top: 50px;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    #headShot {
+        height: 100%;
+    }
+    
+    #homeTextCol {
+        margin-right: 0px;
+    }
+    
+    #homePhotoCol {
+        border: solid 3px #b8a279;
+        padding: 2px;
+        margin-left: 0px;
+    }
+
+}
