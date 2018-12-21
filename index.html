@@ -19,37 +19,30 @@
     <nav class="nav-bar bg-light navbar-light navbar-expand-sm border-bottom" id="global-nav">
         <div class="container" id="navContainer">
             <div class="row" id="navHamSigLog">
-                <div class="col-2">
+                <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0">
                     <button class="navbar-toggler text-left" type="button" data-toggle="collapse" data-target="#toggleNav" aria-controls="toggleNav" aria-expanded="false" aria-label="Toggle naviation" id="hamburger">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div class="col-2">
-                        <a href="#" class="">
-                            <img src="assets/images/logo.svg" alt="Callie Hart Logo" class="text-right" id="logo">
-                        </a>
+                <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0">
+                    <a href="#" class="">
+                        <img src="assets/images/logo.svg" alt="Callie Hart Logo" class="" id="logo">
+                    </a>
                 </div>
-                <div class="col-8">
-                    <img src="assets/images/signature.svg" alt="Callie Hart Signature" class="text-left mx-auto" id="signature">
-                </div>
-            </div>
-          
-            <div class="navbar-collapse collapse" id="toggleNav">
-                <div class="navbar-nav mx-auto" id="navLinkDiv">
-                    <a href="#" class="nav-item nav-link active">HOME</a>
-                    <a href="#aboutPage" class="nav-item nav-link">ABOUT</a>
-                    <!--<a href="#processPage" class="nav-item nav-link">PROCESS</a>-->
-                    <a href="#portfolioPage" class="nav-item nav-link">PORTFOLIO</a>
-                    <a href="#contactPage" class="nav-item nav-link">CONTACT</a>
+                <div class="navbar-collapse collapse col-lg-11 col-md-11 col-sm-11" id="toggleNav">
+                    <div class="navbar-nav mx-auto" id="navLinkDiv">
+                        <a href="#" class="nav-item nav-link active">HOME</a>
+                        <a href="#portfolioPage" class="nav-item nav-link">PORTFOLIOS</a>
+                        <a href="#contactPage" class="nav-item nav-link">CONTACT</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
     <div class="container" id="homePage">
         <div class="row">
-            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-8 offset-lg-2 offset-md-1 offset-xs-2" id="homeTextCol">
-                <div id="changingTitles"  class="font-effect-3d-float">
-                </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="homeTextCol">
+                <div id="changingTitles"  class="font-effect-3d-float"></div>
                 <div id="linkingInfo">
                     <a href="https://www.linkedin.com/in/callie-c-hart/" target="_blank"><i class="fab fa-linkedin fa-2x animated bounceIn"></i></a>
                     <a href="https://calliehart.github.io" target="_blank"><i class="fab fa-github-square fa-2x animated bounceIn"></i></a>
@@ -58,28 +51,26 @@
                     <a href="mailto:callie.c.hart@gmail.com" id="myEmail">callie.c.hart@gmail.com</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-8" id="homePhotoCol">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="homePhotoCol">
                 <img src="assets/images/profileCropped.jpg" alt="Callie Hart Headshot" id="headShot">
             </div>
-        </div>
-    </div>
-    <div class="container" id="aboutPage">
-        <div class="row">
-            <div class="col-8 offset-2">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12" id="aboutPage">
                 <div class="row">
-                    <div class="col pageTitle font-effect-3d-float" id="aboutTitle">
-                        <h1>About</h1>
+                    <div class="col font-effect-3d-float" id="aboutTitle">
+                        <img src="assets/images/signature.svg" alt="Callie Hart Signature" class="mx-auto" id="signature">
                     </div>
-                </div>
+                 </div>
                 <div class="row">
                     <div class="col" id="aboutText">
                         <p>Hi. Thank you for taking the time to stop by and view my portfolio. I'd like to share a little more about myself. 
-                            I'm in the process of learning Web Development through KU's Coding Bootcamp. Before starting down this path I took some 
-                            continuing education courses at Johnson County Community College.</p>
-
+                        I'm in the process of learning Web Development through KU's Coding Bootcamp. Before starting down this path I took some 
+                        continuing education courses at Johnson County Community College.</p>
+        
                         <p>At the moment I am working at Garmin using my B.S. in Geography as an Aviation Cartographer. There we input and manage 
-                            data for thousands of airports and charts that is viewable by pilots digitally as they fly.</p>
-                                
+                        data for thousands of airports and charts that is viewable by pilots digitally as they fly.</p>
+                                        
                         <p>I live in Overland Park, KS with my husband and two pups. We enjoy movies and are boardgame geeks.</p>
                     </div>
                 </div>
@@ -90,131 +81,125 @@
         <div class="row">
             <div class="col-lg-10 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
                 <div class="row">
-                    <div class="col pageTitle font-effect-3d-float">
-                        <h1>Portfolio</h1>
+                    <div class="col pageTitle font-effect-3d-float mb-4">
+                        <h1>Portfolios</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                    
+                        <button class="btn btn-block btn-dark" id="UXBtn">UX Portfolio</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-block btn-dark" id="WebBtn">Web Dev Portfolio</button>
                     </div>
                 </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://huntertrammell.github.io/Films-With-Friends/" target="_blank"><img src="assets/images/filmsPlusFriends.jpg" alt="Films Plus Friends" class="projectThumb"></a>
+                <div id="projWrapper">
+                    <!--<div>
+                        View more about my processes here.
+                    </div>-->
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://huntertrammell.github.io/Films-With-Friends/" target="_blank"><img src="assets/images/filmsPlusFriends.jpg" alt="Films Plus Friends" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Films Plus Friends</h3>
+                            <p>Films + Friends is a service aimed at helping users plan what movies to watch with their friends.
+                            The user selects a genre and rating and we return 5 movies from the OMDB API. These results are editable allowing the user 
+                            to remove any movies and then add in one of their choice through a search. The app then sends out invitations for everyone invited to vote 
+                            for the movie of their choice. Once all votes are in everyone receives an email with the winning title. 
+                            </p>
+                            <a href="https://github.com/huntertrammell/Films-With-Friends"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Films Plus Friends</h3>
-                        <p>Films + Friends is a service aimed at helping users plan what movies to watch with their friends.
-                        The user selects a genre and rating and we return 5 movies from the OMDB API. These results are editable allowing the user 
-                        to remove any movies and then add in one of their choice through a search. The app then sends out invitations for everyone invited to vote 
-                        for the movie of their choice. Once all votes are in everyone receives an email with the winning title. 
-                        </p>
-                        <a href="https://github.com/huntertrammell/Films-With-Friends"><h4>View The Code</h4></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://codingcurator.herokuapp.com/" target="_blank"><img src="assets/images/curator.png" alt="Webdev Bookmark App" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Curator App</h3>
+                            <p>This app allows users to create an account and keep track of tech development bookmarks in an organized manner. Users have main collections that are named by them, but the subcategories of "Documentation", "Tutorial", and "Other", help with easy organization.
+                            </p>
+                            <a href="https://github.com/jason-michael/project-2.git"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://calliehart.github.io/TriviaGame/" target="_blank"><img src="assets/images/goodJobBrain.jpg" alt="Good Job, Brain Trivia" class="projectThumb"></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://calliehart.github.io/TriviaGame/" target="_blank"><img src="assets/images/goodJobBrain.jpg" alt="Good Job, Brain Trivia" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Good Job, Brain Trivia Based Game</h3>
+                            <p>A simple browser trivia game designed to challenge the user to answer 6 trivia questions from any of the 3 possible randomized quizes within a defined time.</p>
+                            <a href="https://github.com/calliehart/TriviaGame"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Good Job, Brain Trivia Based Game</h3>
-                        <p>A simple browser trivia game designed to challenge the user to answer 6 trivia questions from any of the 3 possible randomized quizes within a defined time.</p>
-                        <a href="https://github.com/calliehart/TriviaGame"><h4>View The Code</h4></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://calliehart.github.io/WordGuessGame/" target="_blank"><img src="assets/images/hangman.jpg" alt="Word Guess Game" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Country Themed Word Guess Game</h3>
+                            <p>Guess which countries name is hiding in this hangman styled game. Users get a limited amount of guesses for letters within the word.
+                                If the word is guessed before all guesses are used, the user wins.  
+                            </p>
+                            <a href="https://github.com/calliehart/WordGuessGame"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://calliehart.github.io/WordGuessGame/" target="_blank"><img src="assets/images/hangman.jpg" alt="Word Guess Game" class="projectThumb"></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://calliehart.github.io/unit-4-game/" target="_blank"><img src="assets/images/RPGGame.jpg" alt="Powerpuff Game" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Powerpuff Girls Themed Battle Game</h3>
+                            <p>This is a simple browser game designed to challenge the user to figure out what order of defeating opponent characters is necessary to win the game. 
+                                The user must win all 3 rounds to win the game. 
+                            </p>
+                            <a href="https://github.com/calliehart/unit-4-game"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Country Themed Word Guess Game</h3>
-                        <p>Guess which countries name is hiding in this hangman styled game. Users get a limited amount of guesses for letters within the word.
-                            If the word is guessed before all guesses are used, the user wins.  
-                        </p>
-                        <a href="https://github.com/calliehart/WordGuessGame"><h4>View The Code</h4></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://drive.google.com/file/d/1ZIpACZ1IJrcUts2X1mgw80CychjSAqpS/view?usp=sharing" target="_blank"><img src="assets/images/liri.png" alt="Liri App" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>LIRI App - Node</h3>
+                            <p>This Liri app runs on the command line using node. It allows you to search for information about songs, movies, and concerts.
+                            </p>
+                            <a href="https://github.com/calliehart/liri-node-app"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://calliehart.github.io/unit-4-game/" target="_blank"><img src="assets/images/RPGGame.jpg" alt="Powerpuff Game" class="projectThumb"></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://drive.google.com/file/d/16zA9PY15mLsgEEhiUIxe3imaAb3-KIog/view?usp=sharing" target="_blank"><img src="assets/images/bamazon.png" alt="Bamazon App" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Bamazon App - MySQL</h3>
+                            <p>This app runs on the command line using node and connects to a MySQL database. It shows you a table of items with information about each and prompts you to purchase an item. Once you have chosen an item it asks for a quanity and then gives you a total cost if the desired item is available.
+                            </p>
+                            <a href="https://github.com/calliehart/bamazon"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Powerpuff Girls Themed Battle Game</h3>
-                        <p>This is a simple browser game designed to challenge the user to figure out what order of defeating opponent characters is necessary to win the game. 
-                            The user must win all 3 rounds to win the game. 
-                        </p>
-                        <a href="https://github.com/calliehart/unit-4-game"><h4>View The Code</h4></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://hart-friend-finder.herokuapp.com/" target="_blank"><img src="assets/images/friendFinder.png" alt="Friend Finder App" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Friend Finder App - Express</h3>
+                            <p>This app is a quiz that matches the users compatibility with characters from the Friends TV show. The user gives their name and a link to their photo. They then answer ten simple questions about their personality and a modal alerts them with the results.
+                            </p>
+                            <a href="https://github.com/calliehart/FriendFinder"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://drive.google.com/file/d/1ZIpACZ1IJrcUts2X1mgw80CychjSAqpS/view?usp=sharing" target="_blank"><img src="assets/images/liri.png" alt="Liri App" class="projectThumb"></a>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://hart-burger.herokuapp.com/" target="_blank"><img src="assets/images/bobs.png" alt="Burger App" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Burger App - Handlebars</h3>
+                            <p>This app allows users to enter the name of a burger that gets saved to a SQL database. The available burgers within the table are shown to the left with the option to "Devour". Once they have been devoured they move to the right list of devoured burgers.
+                            </p>
+                            <a href="https://github.com/calliehart/burger"><h4>View The Code</h4></a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>LIRI App - Node</h3>
-                        <p>This Liri app runs on the command line using node. It allows you to search for information about songs, movies, and concerts.
-                        </p>
-                        <a href="https://github.com/calliehart/liri-node-app"><h4>View The Code</h4></a>
-                    </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://drive.google.com/file/d/16zA9PY15mLsgEEhiUIxe3imaAb3-KIog/view?usp=sharing" target="_blank"><img src="assets/images/bamazon.png" alt="Bamazon App" class="projectThumb"></a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Bamazon App - MySQL</h3>
-                        <p>This app runs on the command line using node and connects to a MySQL database. It shows you a table of items with information about each and prompts you to purchase an item. Once you have chosen an item it asks for a quanity and then gives you a total cost if the desired item is available.
-                        </p>
-                        <a href="https://github.com/calliehart/bamazon"><h4>View The Code</h4></a>
-                    </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://hart-friend-finder.herokuapp.com/" target="_blank"><img src="assets/images/friendFinder.png" alt="Friend Finder App" class="projectThumb"></a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Friend Finder App - Express</h3>
-                        <p>This app is a quiz that matches the users compatibility with characters from the Friends TV show. The user gives their name and a link to their photo. They then answer ten simple questions about their personality and a modal alerts them with the results.
-                        </p>
-                        <a href="https://github.com/calliehart/FriendFinder"><h4>View The Code</h4></a>
-                    </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://hart-burger.herokuapp.com/" target="_blank"><img src="assets/images/bobs.png" alt="Burger App" class="projectThumb"></a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Burger App - Handlebars</h3>
-                        <p>This app allows users to enter the name of a burger that gets saved to a SQL database. The available burgers within the table are shown to the left with the option to "Devour". Once they have been devoured they move to the right list of devoured burgers.
-                        </p>
-                        <a href="https://github.com/calliehart/burger"><h4>View The Code</h4></a>
-                    </div>
-                </div>
-                <div class="row projLinks">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="https://codingcurator.herokuapp.com/" target="_blank"><img src="assets/images/curator.png" alt="Webdev Bookmark App" class="projectThumb"></a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
-                        <h3>Curator App - Project 2</h3>
-                        <p>This app allows users to create an account and keep track of tech development bookmarks in an organized manner. Users have main collections that are named by them, but the subcategories of "Documentation", "Tutorial", and "Other", help with easy organization.
-                        </p>
-                        <a href="https://github.com/jason-michael/project-2.git"><h4>View The Code</h4></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="processPage">
-         <div class="row">
-            <div class="col-8 offset-2">
-                <div class="row">
-                    <div class="col pageTitle font-effect-3d-float" id="processTitle">
-                        <h1>My Process</h1>
-                    </div>
-                </div>
-                <div class="row">
-    
                 </div>
             </div>
         </div>

@@ -51,8 +51,8 @@ nav {
     top: 0;
     z-index: 1;
     width: 100%;
-    height: 200px;
-    padding-top: 80px;
+    height: 50px;
+    padding-top: 10px;
 
 }
 
@@ -74,7 +74,14 @@ p {
 .emailLink {
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+.designChangeBtn {
     margin-top: 10px;
+    text-align: center;
+    height: 200px;
+    width: 200px;
 }
 
 .fab {
@@ -108,40 +115,29 @@ p {
     padding: 0px 20px 20px 20px;
 }
 
-.scrolled-nav {
-    height: 90px;
-    padding-top: 20px;
-}
-
 #signature {
-    width: 300px;
-}
-.scrolled-nav #signature {
-    width: 200px;
-}
-
-.scrolled-nav #logo {
-    width: 30px;
-}
-
-.scrolled-nav #navHamSigLog {
-    height: 30px;
+    width: 250px;
+    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 #aboutPage {
+    margin: 20px 0 10px 30px;
     background-color: #f2f2f2;
-    height: 100vh;
-    margin-top: 100px;
 }
 
 #aboutTitle, #processTitle  {
+    text-align: center;
     border-bottom: 2px solid #b8a279;
+    padding-top: 20px;
 }
 
 #aboutText {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     margin-top: 20px;
+    padding: 25px;
     color: #666;
+    font-size: 11pt;
 }
 
 #changingTitles {
@@ -149,9 +145,10 @@ p {
     font-size: 36px;
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
-    padding-top: 50px;
-    height: 200px;
-    margin-top: 50px;
+    padding-top: 40px;
+    height: 100px;
+    margin-top: 20px;
+    letter-spacing: 4px;
 }
 
 #contactForm {
@@ -181,10 +178,16 @@ p {
 
 #headShot {
     width: 100%;
+    border: solid 5px #b8a279;
+    padding: 10px;
 }
 
 #homePage {
-    margin-top: 250px;
+    margin-top: 70px;
+}
+
+#homePhotoCol {
+    margin-top: 50px;
 }
 
 #homeTextCol {
@@ -192,19 +195,13 @@ p {
     margin-right: 10px;
 }
 
-#homePhotoCol {
-    border: solid 5px #b8a279;
-    padding: 10px;
-    margin-left: 10px;
-}
-
 #linkingInfo {
     text-align: center;
+    padding-top: 20px;
 }
 
 #logo {
-    width: 50px;
-    padding-bottom: 50px;
+    width: 30px;
     display: inline;
 }
 
@@ -232,13 +229,19 @@ p {
     margin-bottom: 50px;
 }
 
+#UXDesignCol{
+    margin-top: 30px;
+}
+
+#WebDevCol{
+    margin-top: 30px;
+}
+
 
 @media only screen and (max-width: 900px) {
 
-    .scrolled-nav {
-        height: 65px;
-        padding-top: 0;
-    }
+
+   
     
 }
 
@@ -253,16 +256,6 @@ p {
         margin-top: 80px; 
     }
 
-    .scrolled-nav {
-        height: 65px;
-        padding-top: 0;
-    }
-    
-    .scrolled-nav #signature {
-        padding-top: 15px;
-        padding-bottom: 5px;
-    }
-
     #aboutPage {
         height: 100%;
     }
@@ -273,16 +266,11 @@ p {
     
     #headShot {
         padding: 15px;
+        border: solid 5px #b8a279;
     }
 
     #homeTextCol {
         margin-right: 0px;
-    }
-    
-    #homePhotoCol {
-        border: solid 4px #b8a279;
-        padding: 20px 8px 8px 8px;
-        margin-left: 0px;
     }
 
     #navLinkDiv {
@@ -303,20 +291,17 @@ p {
         padding-top: 0;
     }
 
-    .scrolled-nav {
-        padding-top: 0;
-        height: 65px;
+    .designChangeBtn {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+
     }
 
     #signature {
         width: 200px;
         margin-top: 15px;
         padding: 0;
-    }
-
-    .scrolled-nav #signature  {
-        width: 200px;
-        padding:0;
     }
 
     #aboutPage {
@@ -328,7 +313,7 @@ p {
     #changingTitles {
         padding-top: 10px;
         height: 100px;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     #contactPage {
@@ -345,16 +330,19 @@ p {
 
     #headShot {
         height: 100%;
+        border: solid 5px #b8a279;
+        padding: 10px;
     }
 
     #homePage {
-        margin-top: 65px;
+        margin-top: 10px;
     }
 
     #homePhotoCol {
         border: solid 3px #b8a279;
         padding: 5px;
         margin-left: 0px;
+        margin-top: 10px;
     }
 
     #homeTextCol {
@@ -394,18 +382,16 @@ p {
 
 @media only screen and (max-width: 320px) {
 
+    
     #headShot {
         height: 100%;
+        border: solid 5px #b8a279;
+        padding: 10px;
     }
     
     #homeTextCol {
-        margin-right: 0px;
+        margin-right: 10px;
     }
     
-    #homePhotoCol {
-        border: solid 3px #b8a279;
-        padding: 2px;
-        margin-left: 0px;
-    }
 
 }
