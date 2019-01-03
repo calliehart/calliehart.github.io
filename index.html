@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&effect=3d-float" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
     <div class="background-wrap">
@@ -25,15 +26,15 @@
                     </button>
                 </div>
                 <div class="col-lg-0 col-md-0 col-sm-0 col-xs-0">
-                    <a href="#" class="">
+                    <a href="#" id="logoBtn">
                         <img src="assets/images/logo.svg" alt="Callie Hart Logo" class="" id="logo">
                     </a>
                 </div>
                 <div class="navbar-collapse collapse col-lg-11 col-md-11 col-sm-11" id="toggleNav">
                     <div class="navbar-nav mx-auto" id="navLinkDiv">
-                        <a href="#" class="nav-item nav-link active">HOME</a>
-                        <a href="#portfolioPage" class="nav-item nav-link">PORTFOLIOS</a>
-                        <a href="#contactPage" class="nav-item nav-link">CONTACT</a>
+                        <a href="#" class="nav-item nav-link active" id="homeMenu">HOME</a>
+                        <a href="#portfolioPage" class="nav-item nav-link" id="portfolioMenu">PORTFOLIOS</a>
+                        <a href="#contactPage" class="nav-item nav-link" id="contactMenu">CONTACT</a>
                     </div>
                 </div>
             </div>
@@ -53,10 +54,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="homePhotoCol">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" id="homePhotoCol">
                 <img src="assets/images/profileCropped.jpg" alt="Callie Hart Headshot" id="headShot">
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12" id="aboutPage">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" id="aboutPage">
                 <div class="row">
                     <div class="col font-effect-3d-float" id="aboutTitle">
                         <img src="assets/images/signature.svg" alt="Callie Hart Signature" class="mx-auto" id="signature">
@@ -65,8 +66,9 @@
                 <div class="row">
                     <div class="col" id="aboutText">
                         <p>Hi. Thank you for taking the time to stop by and view my portfolio. I'd like to share a little more about myself. 
-                        I'm in the process of learning Web Development through KU's Coding Bootcamp. Before starting down this path I took some 
-                        continuing education courses at Johnson County Community College.</p>
+                        I'm in the process of learning Web Development through KU's Coding Bootcamp in order to futher my skills. Before starting down this path I took some 
+                        continuing education Web Development courses at Johnson County Community College. In late 2017 I completed my Masters of Art in Interaction Design through KU and am 
+                        hoping that I will be able to build onto my experience with UX and Web Development in the future!</p>
         
                         <p>At the moment I am working at Garmin using my B.S. in Geography as an Aviation Cartographer. There we input and manage 
                         data for thousands of airports and charts that is viewable by pilots digitally as they fly.</p>
@@ -79,24 +81,22 @@
     </div>
     <div class="container" id="portfolioPage">
         <div class="row">
-            <div class="col-lg-10 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
-                <div class="row">
-                    <div class="col pageTitle font-effect-3d-float mb-4">
-                        <h1>Portfolios</h1>
+            <div class="col pageTitle font-effect-3d-float" id="portfolioTitleDiv">
+                <h1>Portfolios</h1> 
+                <h5 id="whichPortfolioViewing">Web Dev Portfolio</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-10 offset-1">
+                <div class="row" id="switchingPortBtns">
+                    <div class="col">
+                        <button class="btn btn-block btn-dark clickedBtn" id="WebBtn">Web Dev Portfolio</button>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col">
                         <button class="btn btn-block btn-dark" id="UXBtn">UX Portfolio</button>
                     </div>
-                    <div class="col">
-                        <button class="btn btn-block btn-dark" id="WebBtn">Web Dev Portfolio</button>
-                    </div>
                 </div>
                 <div id="projWrapper">
-                    <!--<div>
-                        View more about my processes here.
-                    </div>-->
                     <div class="row projLinks">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <a href="https://huntertrammell.github.io/Films-With-Friends/" target="_blank"><img src="assets/images/filmsPlusFriends.jpg" alt="Films Plus Friends" class="projectThumb"></a>
@@ -201,18 +201,46 @@
                         </div>
                     </div>
                 </div>
+                <div id="uxWrapper">
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="tealplate.html" target="_blank"><img src="assets/images/tealplate.jpg" alt="TealPlate" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>TealPlate</h3>
+                            <p>TealPlate: Providing Assistance with Safe Meal Preparation for Those with Food Sensitivities is an independent project I completed as my thesis project for my Masters of Arts in Design. It is a proof of concept of an web application that would benefit those who are less familiar with dealing with the complexities of food sensistivies. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row projLinks">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="orchestra.html" target="_blank"><img src="assets/images/overlandparkorchestra.jpg" alt="Overland Park Orchestra" class="projectThumb"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projDes">
+                            <h3>Overland Park Orchestra Website</h3>
+                            <p>This was a project to restructure the existing website for the Overland Park Orchestra to better serve the needs of the Orchestra and the community. It was completed using wix.com.
+                            </p>
+                            <a href="https://www.oporchestra.org/" target="_blank"><h4>View The Website</h4></a>
+                        </div>
+                    </div>
+                    <!--<div class="row">
+                        <div class="col pageTitle font-effect-3d-float mb-4">
+                            <h1>My Process</h1>
+                        </div>
+                    </div>-->
+                </div>
             </div>
         </div>
     </div>
     <div class="container" id="contactPage">
         <div class="row">
+            <div class="col pageTitle font-effect-3d-float" id="contactTitle">
+                <h1>Contact Me</h1>
+                <h5>It would be great to hear from you!</h5>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12">
-                <div class="row">
-                    <div class="col pageTitle font-effect-3d-float" id="contactTitle">
-                        <h1>Contact Me</h1>
-                        <h5>It would be great to hear from you!</h5>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col">
                         <form action="" id="contactForm" method="POST">

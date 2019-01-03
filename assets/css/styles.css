@@ -29,13 +29,19 @@ h3 {
 h4 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 12pt;
-    color: #31A7AF;
+    color: #333;
     text-decoration: none;
+    border: 2px solid #333;
+    display: block;
+    text-align: center;
+    padding: 8px 0px;
+    margin-top: 20px;
    
 }
 
 h4:hover {
     color: #b8a279;
+    border: 2px solid #b8a279;
 }
 
 h6 {
@@ -60,6 +66,17 @@ p {
     color: #333;
 }
 
+ul.breadcrumb {
+    padding: 0px 16px;
+    list-style: none;
+    background: transparent;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    padding-left: 5px;
+}
+
 .btn-dark {
     border-radius: 0;
     background: #b8a279;
@@ -67,6 +84,11 @@ p {
 }
 
 .btn-dark:hover {
+    background: #666;
+    border: 1px solid #666;
+}
+
+.clickedBtn {
     background: #666;
     border: 1px solid #666;
 }
@@ -84,10 +106,25 @@ p {
     width: 200px;
 }
 
+.designQuestion {
+    margin: 30px 0px 50px 0px;
+    padding-bottom: 50px;
+    border-bottom: #b8a279 1px solid;
+}
+
 .fab {
     color: #f2f2f2;
     z-index: 2;
     padding: 2px; 
+}
+
+.focusedQuestion {
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    color: #31A7AF;
+    padding: 30px 0px 40px 0px;
+    text-shadow: 1px 1px #666;
 }
 
 .footer {
@@ -97,11 +134,17 @@ p {
     padding-top: 20px;
 }
 
+.largeTextBody {
+    background: #e5e5e5;
+    padding: 20px;
+}
+
 .pageTitle {
     font-family: 'Fjalla One', sans-serif;
     margin-top: 100px;
+    margin-bottom: 60px;
     text-align: center;
-    color: #31A7AF; 
+    color: #f2f2f2; 
 }
 
 .projLinks {
@@ -110,9 +153,13 @@ p {
     padding-bottom: 30px;
 }
 
+.projectDescriptionRow {
+    margin: 50px 0px;
+}
+
 .projectThumb {
-    width: 100%;
-    padding: 0px 20px 20px 20px;
+    width: 95%;
+    display: block;
 }
 
 #signature {
@@ -122,7 +169,7 @@ p {
 }
 
 #aboutPage {
-    margin: 20px 0 10px 30px;
+    margin: 50px 0 10px 0px;
     background-color: #f2f2f2;
 }
 
@@ -172,8 +219,12 @@ p {
 
 #contactPage {
     height: 100vh;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
+}
+
+#contactTitle {
+    background: #31A7AF;
+    padding: 30px 0px 15px 0px;
 }
 
 #headShot {
@@ -217,6 +268,20 @@ p {
     height: 50px;
 }
 
+#newOrchestraSite {
+    width: 500px;
+}
+
+#orchestraTitleDiv {
+    background: #31A7AF;
+    padding: 30px 0px 15px 0px;
+    margin-top: 70px;
+}
+
+#previousOrchestraSite {
+    width: 500px;
+}
+
 #processPage {
     background-color: #e5e5e5;
     height: 100vh;
@@ -225,8 +290,26 @@ p {
 
 #portfolioPage {
     height: 100%;
-    margin-top: 100px;
     margin-bottom: 50px;
+}
+
+#portfolioTitleDiv {
+    background: #31A7AF;
+    padding: 30px 0px 15px 0px;
+}
+
+#switchingPortBtns {
+    margin-bottom: 40px;
+}
+
+#tealplateTitleRow {
+    background: #31A7AF;
+    padding: 30px 0px 15px 0px;
+    margin-top: 70px;
+}
+
+#tealplateWrapper {
+    width: 80%;
 }
 
 #UXDesignCol{
