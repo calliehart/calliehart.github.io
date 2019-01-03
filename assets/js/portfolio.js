@@ -23,13 +23,13 @@ $("#portfolioMenu").on("click", function(){
     $("#portfolioMenu").addClass("active");
     $("#homeMenu").removeClass("active");
     $("#contactMenu").removeClass("active");
+    $("#hamburger").trigger("click");
 });
 
 $("#contactMenu").on("click", function(){
     $("#contactMenu").addClass("active");
     $("#homeMenu").removeClass("active");
     $("#portfolioMenu").removeClass("active");
-    $("#hamburger").attr("aria-expanded", "false");
     $("#hamburger").trigger("click");
 });
 
@@ -37,7 +37,7 @@ $("#homeMenu").on("click", function(){
     $("#homeMenu").addClass("active");
     $("#portfolioMenu").removeClass("active");
     $("#contactMenu").removeClass("active");
-    $("#hamburger").attr("aria-expanded", "false");
+    $("#hamburger").trigger("click");
 });
 
 $("#logoBtn").on("click", function(){
